@@ -1,5 +1,6 @@
 import { MOVIES } from '../data';
 import { Movie} from '../types';
+import * as jquery from 'jquery';
 
 export class MoviesService {
   constructor() {}
@@ -43,5 +44,10 @@ export class MoviesService {
     } else {
       return false;
     }
+  }
+
+  rateMovie(id: any, rating: any) {
+    MOVIES.filter((m) => {m.id === id})[0].rating = rating;
+    return MOVIES.find((m) => m.id === id);
   }
 }

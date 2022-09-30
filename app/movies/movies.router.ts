@@ -88,3 +88,7 @@ MoviesRouter.delete('/:id', (req: Request, res: Response) => {
     res.status(404).json({ message: 'ID Not Found' });
   }
 });
+
+MoviesRouter.get('/:id', (req: any, res: any) => {
+  return moviesService.rateMovie(req.params.id, req.body.rating);
+});
