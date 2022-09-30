@@ -20,6 +20,9 @@ Movie
 
 `npm run dev`
 
+It runs at `localhost:5002/movies`
+
+
 ## Testing
 
 `npm run test`
