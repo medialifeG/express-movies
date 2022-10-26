@@ -19,6 +19,16 @@ MoviesRouter.get('/:id([0-9]+)', (req: Request, res: Response) => {
   }
 });
 
+MoviesRouter.get('/:id([0-9]+)/poster', async (req: Request, res: Response) => {
+  const foundMovie = moviesService.getMovie(parseInt(req.params.id));
+  if (foundMovie) {
+    const foundPoster = await moviesService.getPoster(foundMovie);
+    res.status(200).send(foundPoster);
+  } else {
+    res.status(404).json({ message: 'Movie Not Found'});
+  }
+});
+
 // MoviesRouter.post('/', (req: Request, res: Response) => {
 //   const newMovie = {
 //     id: 0,
