@@ -26,33 +26,33 @@ describe('MoviesService', () => {
     expect(result).toBeNull();
   });
 
-  it('createMovie: should create movie', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('createMovie: should create movie', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 
-  it('updateMove: should update movie with valid id', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('updateMove: should update movie with valid id', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 
-  it('updateMovie: should do nothing with invalid id', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('updateMovie: should do nothing with invalid id', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 
-  it('deleteMovie: should delete movie with valid id', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('deleteMovie: should delete movie with valid id', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 
-  it('deleteMovie: should delete movie with valid id', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('deleteMovie: should delete movie with valid id', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 
-  it('deleteMovie: should do nothing with invalid id', async () => {
-      // stub
-    expect(true).toBeTruthy();
-  });
+  // it('deleteMovie: should do nothing with invalid id', async () => {
+  //     // stub
+  //   expect(true).toBeTruthy();
+  // });
 });
