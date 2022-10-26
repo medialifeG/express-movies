@@ -55,4 +55,10 @@ describe('MoviesService', () => {
       // stub
     expect(true).toBeTruthy();
   });
+
+  it('rating movie should work', async () => {
+    var newMovie = moviesService.rateMovie(1,10);
+    expect(newMovie.rating).toBe(true);
+});
+  
 });
